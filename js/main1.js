@@ -31,7 +31,7 @@ const mapLocation = {
         var miUbicacion = new google.maps.Marker({
             position: { lat: mapLocation.items.latitud, lng: mapLocation.items.longitud },
             animation: google.maps.Animation.DROP,
-            map: map
+            map: mapLocation.items.map
         });
         mapLocation.items.map.setZoom(17);
         mapLocation.items.map.setCenter({ lat: mapLocation.items.latitud, lng: mapLocation.items.longitud });
